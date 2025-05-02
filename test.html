@@ -1,1 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Planet and Rotating Thing</title>
+    <style>
+        body {
+            background: #000; /* Optional: a dark background for better contrast */
+            color: #fff; /* Text color */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            height: 100vh;
+            margin: 0;
+        }
+        .planet {
+            width: 100px;
+            height: 100px;
+            background: radial-gradient(circle, #ff9e00, #ff6700);
+            border-radius: 50%;
+            animation: rotate 5s linear infinite;
+            transform: translateY(300px); /* Start off-screen */
+            opacity: 0;
+            transition: transform 1s, opacity 1s;
+        }
+        .text {
+            font-size: 24px;
+            font-family: Arial, sans-serif;
+            margin-top: 20px;
+            opacity: 0;
+            transform: translateY(50px); /* Start off-screen */
+            transition: transform 1s, opacity 1s;
+        }
+        @keyframes rotate {
+            from {
+                transform: rotate(0deg);
+            }
+            to {
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="planet"></div>
+    <div class="text">Explore the Universe of Knowledge!</div>
 
+    <script>
+        document.addEventListener('scroll', function () {
+            const planet = document.querySelector('.planet');
+            const text = document.querySelector('.text');
+            const scrollPosition = window.scrollY;
+
+            // Trigger animations when scrolled halfway down
+            if (scrollPosition > window.innerHeight / 2) {
+                planet.style.transform = 'translateY(0)';
+                planet.style.opacity = '1';
+                text.style.transform = 'translateY(0)';
+                text.style.opacity = '1';
+            }
+        });
+    </script>
+</body>
+</html>
