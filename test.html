@@ -3,64 +3,178 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Planet and Rotating Thing</title>
+    <title>Showcasing New Technology</title>
     <style>
         body {
-            background: #000; /* Optional: a dark background for better contrast */
-            color: #fff; /* Text color */
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-direction: column;
-            height: 100vh;
-            margin: 0;
-        }
-        .planet {
-            width: 100px;
-            height: 100px;
-            background: radial-gradient(circle, #ff9e00, #ff6700);
-            border-radius: 50%;
-            animation: rotate 5s linear infinite;
-            transform: translateY(300px); /* Start off-screen */
-            opacity: 0;
-            transition: transform 1s, opacity 1s;
-        }
-        .text {
-            font-size: 24px;
             font-family: Arial, sans-serif;
-            margin-top: 20px;
-            opacity: 0;
-            transform: translateY(50px); /* Start off-screen */
-            transition: transform 1s, opacity 1s;
+            margin: 0;
+            padding: 0;
+            background: #f4f4f4;
         }
-        @keyframes rotate {
-            from {
-                transform: rotate(0deg);
-            }
-            to {
-                transform: rotate(360deg);
-            }
+        section {
+            padding: 20px;
+            margin: 20px auto;
+            max-width: 800px;
+            background: #fff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        section img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin-bottom: 10px;
+        }
+        section h2 {
+            font-size: 1.5em;
+            margin-bottom: 10px;
+        }
+        section p {
+            font-size: 1em;
+            line-height: 1.6;
         }
     </style>
 </head>
 <body>
-    <div class="planet"></div>
-    <div class="text">Explore the Universe of Knowledge!</div>
+    <!-- Section 1 -->
+    <section>
+        <img src="https://via.placeholder.com/800x400" alt="Hero Banner">
+        <h2>Hero Banner</h2>
+        <p>A visually striking banner that introduces the technology with a powerful tagline.</p>
+    </section>
 
-    <script>
-        document.addEventListener('scroll', function () {
-            const planet = document.querySelector('.planet');
-            const text = document.querySelector('.text');
-            const scrollPosition = window.scrollY;
+    <!-- Section 2 -->
+    <section>
+        <img src="https://via.placeholder.com/800x400" alt="Photo Gallery">
+        <h2>Photo Gallery</h2>
+        <p>A collection of photos showcasing the technology in action.</p>
+    </section>
 
-            // Trigger animations when scrolled halfway down
-            if (scrollPosition > window.innerHeight / 2) {
-                planet.style.transform = 'translateY(0)';
-                planet.style.opacity = '1';
-                text.style.transform = 'translateY(0)';
-                text.style.opacity = '1';
-            }
-        });
-    </script>
+    <!-- Section 3 -->
+    <section>
+        <img src="https://via.placeholder.com/800x400" alt="Photo with Callout Text">
+        <h2>Photo with Callout Text</h2>
+        <p>An image with a highlighted area and descriptive text explaining its features.</p>
+    </section>
+
+    <!-- Section 4 -->
+    <section>
+        <img src="https://via.placeholder.com/800x400" alt="Before-and-After Slider">
+        <h2>Before-and-After Slider</h2>
+        <p>A comparison slider showing the transformation brought by the technology.</p>
+    </section>
+
+    <!-- Section 5 -->
+    <section>
+        <img src="https://via.placeholder.com/800x400" alt="Parallax Scrolling Image">
+        <h2>Parallax Scrolling Image</h2>
+        <p>An image with a parallax scrolling effect and descriptive floating text.</p>
+    </section>
+
+    <!-- Section 6 -->
+    <section>
+        <img src="https://via.placeholder.com/800x400" alt="Infographic with Photo">
+        <h2>Infographic with Photo</h2>
+        <p>A visually rich infographic combined with photos to explain the benefits.</p>
+    </section>
+
+    <!-- Section 7 -->
+    <section>
+        <img src="https://via.placeholder.com/800x400" alt="Image with Quote">
+        <h2>Image with Quote</h2>
+        <p>A photo with an overlay quote from an early adopter or expert.</p>
+    </section>
+
+    <!-- Section 8 -->
+    <section>
+        <img src="https://via.placeholder.com/800x400" alt="Image and Text Split Layout">
+        <h2>Image and Text Split Layout</h2>
+        <p>An image on one side and descriptive text on the other for clarity.</p>
+    </section>
+
+    <!-- Section 9 -->
+    <section>
+        <img src="https://via.placeholder.com/800x400" alt="Interactive Map with Text Labels">
+        <h2>Interactive Map with Text Labels</h2>
+        <p>A map showing where the technology is being used, with interactive text labels.</p>
+    </section>
+
+    <!-- Section 10 -->
+    <section>
+        <img src="https://via.placeholder.com/800x400" alt="Overlay Text on Image">
+        <h2>Overlay Text on Image</h2>
+        <p>A full-sized image with semi-transparent overlay text describing its features.</p>
+    </section>
+
+    <!-- Section 11 -->
+    <section>
+        <img src="https://via.placeholder.com/800x400" alt="Collage with Text Annotations">
+        <h2>Collage with Text Annotations</h2>
+        <p>A collage of photos with text annotations pointing out key features.</p>
+    </section>
+
+    <!-- Section 12 -->
+    <section>
+        <img src="https://via.placeholder.com/800x400" alt="Icon and Photo Combination">
+        <h2>Icon and Photo Combination</h2>
+        <p>A photo with icons and text highlighting specific features or benefits.</p>
+    </section>
+
+    <!-- Section 13 -->
+    <section>
+        <img src="https://via.placeholder.com/800x400" alt="Timeline with Photos">
+        <h2>Timeline with Photos</h2>
+        <p>A timeline with photos and text describing the technology's journey.</p>
+    </section>
+
+    <!-- Section 14 -->
+    <section>
+        <img src="https://via.placeholder.com/800x400" alt="Image with Interactive Hotspots">
+        <h2>Image with Interactive Hotspots</h2>
+        <p>An image with clickable hotspots displaying descriptive text.</p>
+    </section>
+
+    <!-- Section 15 -->
+    <section>
+        <img src="https://via.placeholder.com/800x400" alt="Image with Animated Text">
+        <h2>Image with Animated Text</h2>
+        <p>Text that animates over a static photo to explain its features.</p>
+    </section>
+
+    <!-- Section 16 -->
+    <section>
+        <img src="https://via.placeholder.com/800x400" alt="Image in a Polaroid Frame">
+        <h2>Image in a Polaroid Frame</h2>
+        <p>A photo styled like a Polaroid with text describing the moment captured.</p>
+    </section>
+
+    <!-- Section 17 -->
+    <section>
+        <img src="https://via.placeholder.com/800x400" alt="Image Grid with Hover Text">
+        <h2>Image Grid with Hover Text</h2>
+        <p>A grid of photos that display descriptive text when hovered over.</p>
+    </section>
+
+    <!-- Section 18 -->
+    <section>
+        <img src="https://via.placeholder.com/800x400" alt="Full-Width Background Image with Centered Text">
+        <h2>Full-Width Background Image with Centered Text</h2>
+        <p>An impactful full-screen image with text centered over it.</p>
+    </section>
+
+    <!-- Section 19 -->
+    <section>
+        <img src="https://via.placeholder.com/800x400" alt="Image with Progress Bar Text">
+        <h2>Image with Progress Bar Text</h2>
+        <p>An image overlaid with a progress bar graphic showing adoption or success metrics.</p>
+    </section>
+
+    <!-- Section 20 -->
+    <section>
+        <img src="https://via.placeholder.com/800x400" alt="Photo with Transparent Text Cutout">
+        <h2>Photo with Transparent Text Cutout</h2>
+        <p>A photo with bold text cutouts where the image shows through the letters.</p>
+    </section>
 </body>
 </html>
